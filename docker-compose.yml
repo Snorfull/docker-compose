@@ -33,5 +33,5 @@ services:
       - 58.129.7.14:443:443/tcp
       - 58.129.7.15:443:443/tcp
     volumes:
-      - /mnt/lancache/cache/:/data/cache
-      - /mnt/lancache/logs:/data/logs
+      - /mnt/cache/lancache/:/data/cache
+      - /mnt/cache/lancache/logs:/data/logs

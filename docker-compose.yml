@@ -2,7 +2,7 @@ version: '2'
 x-restart-policy: &restart-policy "no"
 services:
   dns:
-    image: Snorfull/lancache-dns:latest
+    image: snorfull/lancache-dns
     env_file: .env
     restart: unless-stopped
     ports:
@@ -20,7 +20,7 @@ services:
 #      - 443:443/tcp
 
   monolithic:
-    image: Snorfull/monolithic:latest
+    image: snorfull/monolithic
     env_file: .env
     restart: unless-stopped
     ports:

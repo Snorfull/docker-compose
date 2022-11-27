@@ -25,7 +25,13 @@ services:
     restart: unless-stopped
     ports:
       - 58.129.7.12:80:80/tcp
+      - 58.129.7.13:80:80/tcp
+      - 58.129.7.14:80:80/tcp
+      - 58.129.7.15:80:80/tcp
       - 58.129.7.12:443:443/tcp
+      - 58.129.7.13:443:443/tcp
+      - 58.129.7.14:443:443/tcp
+      - 58.129.7.15:443:443/tcp
     volumes:
       - /mnt/cache:/data/cache
       - /mnt/logs:/data/logs
